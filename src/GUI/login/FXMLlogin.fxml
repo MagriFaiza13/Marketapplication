@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="470.0" prefWidth="750.0" style="-fx-background-color: purple;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.login.FXMLloginController">
+   <children>
+      <AnchorPane layoutX="454.0" layoutY="6.0" prefHeight="461.0" prefWidth="282.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 40; -fx-background-radius: 40;">
+         <children>
+            <ImageView fitHeight="151.0" fitWidth="152.0" layoutX="58.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/logoMarket%20(1).png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="IDusername" layoutX="31.0" layoutY="149.0" prefHeight="27.0" prefWidth="202.0" promptText="Nom d'utilisateur" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0PX 0PX 1.5PX 0PX; -fx-border-radius: 40px;" />
+            <PasswordField fx:id="IDpassword" layoutX="32.0" layoutY="199.0" prefHeight="27.0" prefWidth="202.0" promptText="mot de passe" style="-fx-background-color: TRANSPARENT; -fx-border-color: black; -fx-border-width: 0px 0px 1.5px 0px; -fx-border-radius: 40px;" />
+            <Label layoutX="76.0" layoutY="106.0" text="S'authentifier" textFill="#681a60">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Hyperlink fx:id="Recoverpassword" layoutX="68.0" layoutY="306.0" onAction="#Recoverpassword" text="mot de passe oublié ?" textFill="#c12ec7">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Hyperlink>
+            <Button fx:id="IDlogin" layoutX="80.0" layoutY="266.0" mnemonicParsing="false" onAction="#Login" prefHeight="25.0" prefWidth="107.0" style="-fx-background-color: purple; -fx-background-radius: 40;" text="SE CONNECTER" textFill="#ebe6e6">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Label fx:id="alertusername" layoutX="67.0" layoutY="182.0" prefHeight="17.0" prefWidth="131.0" textFill="RED" />
+            <Label fx:id="alertpassword" layoutX="66.0" layoutY="236.0" prefHeight="17.0" prefWidth="131.0" textFill="RED" />
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="470.0" fitWidth="391.0" layoutY="6.0" opacity="0.29" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/shoppingf.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="14.0" layoutY="14.0" text="Bienvenu Au Market.tn" textFill="#fffbfb">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="IDsignup" layoutX="14.0" layoutY="427.0" mnemonicParsing="false" onAction="#Signup" prefHeight="25.0" prefWidth="99.0" style="-fx-background-color: white; -fx-background-radius: 40;" text="S'INSCRIRE" textFill="#830000">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Label layoutX="229.0" layoutY="422.0" text="vous trouvez tout les produits &#10;ici  !" textFill="#f5efef" />
+   </children>
+</AnchorPane>
