@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.FXMLProduitController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="466.0" prefWidth="749.0" style="-fx-background-color: #C55FFC;">
+         <children>
+            <AnchorPane prefHeight="445.0" prefWidth="200.0" style="-fx-background-color: #C55FFC;">
+               <children>
+                  <TextField fx:id="TFNom" layoutX="26.0" layoutY="58.0" promptText="Nom Produit" />
+                  <TextField fx:id="TFQuantite" layoutX="26.0" layoutY="162.0" promptText="Stock" />
+                  <Button layoutX="27.0" layoutY="260.0" mnemonicParsing="false" onAction="#AddProduit" prefHeight="39.0" prefWidth="150.0" style="-fx-background-color: #A0E7E5;" text="Ajouter " textFill="#fcf7f7">
+                     <font>
+                        <Font name="Times New Roman Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="27.0" layoutY="308.0" mnemonicParsing="false" onAction="#Edit" prefHeight="31.0" prefWidth="150.0" style="-fx-background-color: #A0E7E5;" text="Modifier" textFill="#fff8f8">
+                     <font>
+                        <Font name="Times New Roman Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="26.0" layoutY="350.0" mnemonicParsing="false" onAction="#Delete" prefHeight="31.0" prefWidth="150.0" style="-fx-background-color: #A0E7E5;" text="Supprimer" textFill="#fff8f8">
+                     <font>
+                        <Font name="Times New Roman Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="TFId" layoutX="28.0" layoutY="21.0" promptText="ID Produit" visible="false" />
+                  <TextField fx:id="TFReference" layoutX="26.0" layoutY="94.0" promptText="Reference Produit" />
+                  <TextField fx:id="TFPrix" layoutX="26.0" layoutY="198.0" promptText="Prix Produit" />
+                  <Button fx:id="btn_quitter" layoutX="26.0" layoutY="397.0" mnemonicParsing="false" onAction="#Quitter" prefHeight="31.0" prefWidth="150.0" style="-fx-background-color: #A0E7E5;" text="Quitter" textFill="#fff8f8">
+                     <font>
+                        <Font name="Times New Roman Bold" size="19.0" />
+                     </font>
+                  </Button>
+                  <ComboBox fx:id="type" layoutX="26.0" layoutY="128.0" prefWidth="150.0" promptText="Catégorie" />
+                  <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="135.0" layoutY="264.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Nouveau%20dossier/GestionProduit/src/GUI/image/add.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="139.0" layoutY="308.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Nouveau%20dossier/GestionProduit/src/GUI/image/approve-and-update.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="39.0" fitWidth="25.0" layoutX="142.0" layoutY="353.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Nouveau%20dossier/GestionProduit/src/GUI/image/delete-trash.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="32.0" fitWidth="39.0" layoutX="140.0" layoutY="401.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Nouveau%20dossier/GestionProduit/src/GUI/image/18542.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <TableView fx:id="tableview" layoutX="216.0" layoutY="110.0" onMouseClicked="#getSelected" prefHeight="281.0" prefWidth="485.0">
+               <columns>
+                  <TableColumn fx:id="col_nom" prefWidth="81.0" text="Libélle" />
+                  <TableColumn fx:id="col_reference" prefWidth="90.0" text="Référence" />
+                  <TableColumn fx:id="col_categorie" prefWidth="89.0" text="Catégorie" />
+                  <TableColumn fx:id="col_quantite" prefWidth="82.0" text="Stock" />
+                  <TableColumn fx:id="col_prix" prefWidth="92.0" text="prix" />
+               </columns>
+            </TableView>
+            <TextField fx:id="TFFilter" layoutX="216.0" layoutY="66.0" prefHeight="32.0" prefWidth="184.0" promptText="Rechercher" />
+            <Label layoutX="370.0" layoutY="23.0" text="Gestion des Produits" textFill="#400abc">
+               <font>
+                  <Font name="Times New Roman Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
