@@ -1,0 +1,66 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+
+.textfield_design{
+   /*-fx-background-color:transparent;*/
+   -fx-background-radius:5px;
+/*   -fx_border-color:linear-gradient(to botton right,#3a4f93,#a43189);*/
+   -fx-font-size:15px;
+   -fx-border-radius: 5px;
+}
+.insert-image-button{
+    -fx-background-color: transparent;
+    -fx-text-fill:#3a4f93;
+    -fx-cursor:hand;
+    -fx-font-size:15;
+}
+.insert-button{
+    -fx-background-color: #333;
+    -fx-background-radius: 20px;
+    -fx-cursor:hand;
+    -fx-text-fill:#fff;
+    -fx-font-size:15px;
+}
+.insert-button:hover{
+    -fx-background-color: #4677ba;
+}
+.update-button{
+    -fx-background-color: #333;
+    -fx-background-radius: 20px;
+    -fx-cursor: hand;
+    -fx-text-fill:#fff;
+   -fx-font-size:15px;
+}
+
+.update-button:hover{
+    -fx-background-color:#34966c;
+}
+.clear-button{
+    -fx-background-color: #333;
+    -fx-background-radius: 20px;
+    -fx-cursor: hand;
+    -fx-text-fill:#fff;
+   -fx-font-size:15px;
+} 
+.clear-button:hover{
+    -fx-background-color:#5008cc
+}
+
+
+.delete-button{
+    -fx-background-color: #333;
+    -fx-background-radius: 20px;
+    -fx-cursor: hand;
+    -fx-text-fill:#fff;
+   -fx-font-size:15px;
+}
+.delete-button:hover{
+    -fx-background-color:#c21728;
+}
+
+
+
+
+
