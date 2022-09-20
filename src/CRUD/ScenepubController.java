@@ -264,7 +264,7 @@ public class ScenepubController implements Initializable {
         
         path = path.replace("\\", "\\\\");
         
-        String sql = "UPDATE account SET `id_user` = '" 
+        String sql = "UPDATE `publication` SET `id_user` = '" 
                 + id_user.getText() + "', `nom_pub` = '" 
                 + nom_pub.getText() + "', `type` = '" 
                 + type.getSelectionModel().getSelectedItem() 
