@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="470.0" prefWidth="750.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.profil.FXMLprofilController">
+   <children>
+      <TextField fx:id="champnom" layoutX="180.0" layoutY="148.0" prefHeight="25.0" prefWidth="164.0" style="-fx-background-radius: 10px;" />
+      <TextField fx:id="champprenom" layoutX="535.0" layoutY="148.0" prefHeight="25.0" prefWidth="164.0" style="-fx-background-radius: 10px;" />
+      <TextField fx:id="champlogin" layoutX="180.0" layoutY="220.0" prefHeight="25.0" prefWidth="164.0" style="-fx-background-radius: 10px;" />
+      <TextField fx:id="champadresse" layoutX="535.0" layoutY="220.0" prefHeight="25.0" prefWidth="164.0" style="-fx-background-radius: 10px;" />
+      <TextField fx:id="champtel" layoutX="180.0" layoutY="289.0" prefHeight="25.0" prefWidth="164.0" style="-fx-background-radius: 10px;" />
+      <ImageView fitHeight="84.0" fitWidth="132.0" layoutX="324.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icons8_Person_32px.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="40.0" layoutY="152.0" text="Nom" textFill="WHITE" />
+      <Label layoutX="40.0" layoutY="227.0" text="Login" textFill="WHITE" />
+      <Label layoutX="40.0" layoutY="293.0" text="tel" textFill="WHITE" />
+      <Label layoutX="431.0" layoutY="152.0" text="Prenom" textFill="WHITE" />
+      <Label layoutX="431.0" layoutY="227.0" prefHeight="17.0" prefWidth="61.0" text="Adresse" textFill="WHITE" />
+      <Label layoutX="431.0" layoutY="293.0" text="Password" textFill="#f8f8f8" />
+      <Button fx:id="IDretour" layoutX="43.0" layoutY="413.0" mnemonicParsing="false" onAction="#Retour" style="-fx-background-color: #e81111; -fx-background-radius: 40px;" text="Retour" textFill="#e4dfdf" />
+      <Button fx:id="IDmodifier" layoutX="545.0" layoutY="413.0" mnemonicParsing="false" onAction="#Modifier" prefHeight="25.0" prefWidth="72.0" style="-fx-background-color: green; -fx-background-radius: 40px;" text="Modifier" textFill="WHITE" />
+      <Button fx:id="champpassword" layoutX="532.0" layoutY="289.0" mnemonicParsing="false" onAction="#Changer" prefHeight="25.0" prefWidth="164.0" style="-fx-background-radius: 10px; -fx-border-color: yellow; -fx-border-radius: 10px;" text="changer" textFill="#27b51a">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="IDsupprimer" layoutX="627.0" layoutY="413.0" mnemonicParsing="false" onAction="#Supprimer" style="-fx-background-color: #e81111; -fx-background-radius: 40px;" text="Supprimer" textFill="#fffafa" />
+   </children>
+</AnchorPane>

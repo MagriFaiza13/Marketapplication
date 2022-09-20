@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="470.0" prefWidth="750.0" style="-fx-background-color: purple;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.registr.FXMLregistrController">
+   <children>
+      <TextField fx:id="IDprenom" layoutX="505.0" layoutY="135.0" prefHeight="25.0" prefWidth="184.0" style="-fx-background-color: white; -fx-border-color: #fbb117; -fx-border-width: 0px 0px 1.5px 0px; -fx-background-radius: 40px; -fx-border-radius: 40px;" />
+      <TextField fx:id="IDemail" layoutX="504.0" layoutY="179.0" prefHeight="25.0" prefWidth="184.0" style="-fx-background-color: white; -fx-border-color: #fbb117; -fx-border-width: 0px 0px 1.5px 0px; -fx-background-radius: 40px; -fx-border-radius: 40px;" />
+      <TextField fx:id="IDlogin" layoutX="504.0" layoutY="223.0" prefHeight="25.0" prefWidth="184.0" style="-fx-background-color: white; -fx-border-color: #fbb117; -fx-border-width: 0px 0px 1.5px 0px; -fx-background-radius: 40px; -fx-border-radius: 40px;" />
+      <TextField fx:id="IDtel" layoutX="502.0" layoutY="310.0" prefHeight="25.0" prefWidth="184.0" style="-fx-background-color: white; -fx-border-color: #fbb117; -fx-border-width: 0px 0px 1.5px 0px; -fx-background-radius: 40px; -fx-border-radius: 40px;" />
+      <TextField fx:id="IDadresse" layoutX="502.0" layoutY="354.0" prefHeight="25.0" prefWidth="184.0" style="-fx-background-color: white; -fx-border-color: #fbb117; -fx-border-width: 0px 0px  1.5px 0px; -fx-background-radius: 40px; -fx-border-radius: 40px;" />
+      <TextField fx:id="IDnom" layoutX="505.0" layoutY="91.0" prefHeight="25.0" prefWidth="184.0" style="-fx-background-color: white; -fx-border-color: #fbb117; -fx-border-width: 0px 0px 1.5px 0px; -fx-border-radius: 40px; -fx-background-radius: 40px;" />
+      <Text fill="#f2f0f0" layoutX="475.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="INSCRIPTION">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Label layoutX="407.0" layoutY="84.0" text="Nom :" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="406.0" layoutY="128.0" prefHeight="17.0" prefWidth="69.0" text="Prenom :" textFill="#e8e8e8">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="406.0" layoutY="172.0" prefHeight="17.0" prefWidth="53.0" text="E-mail :" textFill="#fffefe">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="406.0" layoutY="216.0" prefHeight="17.0" prefWidth="53.0" text="Login :" textFill="#ebebeb">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="409.0" layoutY="260.0" text="Mdp :" textFill="#f5f5f5">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="408.0" layoutY="303.0" text="Tel :" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="407.0" layoutY="347.0" text="Adresse :" textFill="#f2f2f2">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="IDinscrire" layoutX="615.0" layoutY="419.0" mnemonicParsing="false" onAction="#Registr" prefHeight="25.0" prefWidth="69.0" style="-fx-background-color: white; -fx-background-radius: 40px;" text="s'inscrire" />
+      <Button fx:id="IDretour" layoutX="433.0" layoutY="419.0" mnemonicParsing="false" onAction="#Back" prefHeight="25.0" prefWidth="69.0" style="-fx-background-color: white; -fx-background-radius: 40px;" text="Retour" textFill="#0d0505" />
+      <ImageView fitHeight="476.0" fitWidth="406.0" layoutX="-10.0" opacity="0.69" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/shoppingf.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="alertnom" layoutX="505.0" layoutY="118.0" />
+      <Label fx:id="alertprenom" layoutX="505.0" layoutY="162.0" />
+      <Label fx:id="alertemail" layoutX="505.0" layoutY="206.0" />
+      <Label fx:id="alertlogin" layoutX="505.0" layoutY="251.0" />
+      <Label fx:id="alertmdp" layoutX="505.0" layoutY="294.0" />
+      <Label fx:id="alerttel" layoutX="505.0" layoutY="337.0" />
+      <Label fx:id="alertadresse" layoutX="505.0" layoutY="381.0" />
+      <PasswordField fx:id="IDmdp" layoutX="503.0" layoutY="268.0" prefHeight="25.0" prefWidth="184.0" style="-fx-background-color: white; -fx-border-color: #fbb117; -fx-border-width: 0px 0px 1.5px 0px; -fx-background-radius: 40px; -fx-border-radius: 40px;" />
+   </children>
+</AnchorPane>

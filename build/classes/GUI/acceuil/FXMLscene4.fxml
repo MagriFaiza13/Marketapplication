@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane fx:id="parentContainer" maxHeight="200.0" maxWidth="400.0" minHeight="200.0" minWidth="400.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.acceuil.FXMLscene4Controller">
+   <children>
+      <AnchorPane fx:id="anchorRoot" maxHeight="200.0" maxWidth="400.0" minHeight="163.0" minWidth="185.0" prefHeight="200.0" prefWidth="203.0" style="-fx-background-color: transparent;">
+         <children>
+            <ImageView fitHeight="200.0" fitWidth="331.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@oppo.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="idbtn" layoutX="113.0" layoutY="157.0" mnemonicParsing="false" onAction="#loadnext" prefHeight="43.0" prefWidth="47.0" style="-fx-background-color: transparent; -fx-border-radius: 60px; -fx-border-color: red;" text="&gt;" textFill="RED" />
+            <ImageView fitHeight="216.0" fitWidth="228.0" layoutX="172.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@iphone.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
