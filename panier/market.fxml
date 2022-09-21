@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="618.0" prefWidth="1040.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.panier.MarketController">
+   <children>
+      <BorderPane layoutX="149.0" prefHeight="810.0" prefWidth="1166.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="149.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <VBox prefHeight="500.0" prefWidth="23.0" styleClass="right-bar" stylesheets="@../../../build/classes/values/style.css" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane prefHeight="211.0" prefWidth="435.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <TextField fx:id="rechevent" layoutX="112.0" layoutY="11.0" prefHeight="25.0" prefWidth="352.0" />
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="57.0" prefWidth="435.0" VBox.vgrow="ALWAYS" />
+               </children>
+            </VBox>
+         </left>
+         <center>
+            <VBox prefHeight="618.0" prefWidth="660.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="100.0">
+                     <children>
+                        <Pane prefHeight="84.0" prefWidth="96.0" />
+                        <Button fx:id="totalpanier" mnemonicParsing="false" text="0" />
+                        <Button fx:id="register" mnemonicParsing="false" text="login" />
+                        <Button mnemonicParsing="false" text="Chercher" />
+                     </children>
+                     <VBox.margin>
+                        <Insets left="20.0" right="20.0" top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="465.0" prefWidth="471.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <ScrollPane fx:id="scroll" prefHeight="498.0" prefWidth="866.0">
+                           <content>
+                              <GridPane fx:id="grid" prefHeight="0.0" prefWidth="0.0">
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                                 </rowConstraints>
+                              </GridPane>
+                           </content>
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </ScrollPane>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+      <VBox fx:id="chosenFruitCard" alignment="CENTER" layoutY="33.0" prefHeight="582.0" prefWidth="241.0" style="-fx-background-color: linear-gradient(to bottom right,#476892,#59355D); -fx-background-radius: 30;">
+         <children>
+            <HBox prefHeight="44.0" prefWidth="382.0">
+               <children>
+                  <Label fx:id="fruitNameLable" prefHeight="43.0" prefWidth="110.0" text="Peach" />
+                  <Label prefHeight="47.0" prefWidth="69.0" text="2.99" />
+               </children>
+            </HBox>
+            <VBox prefHeight="200.0" prefWidth="382.0">
+               <children>
+                  <ImageView fx:id="fruitImg" fitHeight="167.0" fitWidth="278.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </VBox>
+            <HBox alignment="CENTER" prefHeight="17.0" prefWidth="382.0">
+               <VBox.margin>
+                  <Insets bottom="20.0" top="20.0" />
+               </VBox.margin>
+               <children>
+                  <HBox prefHeight="17.0" prefWidth="393.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="55.0" prefWidth="382.0">
+               <children>
+                  <HBox prefHeight="55.0" prefWidth="390.0">
+                     <children>
+                        <Button fx:id="enstock" mnemonicParsing="false" text="En stock" />
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="60.0" prefWidth="335.0">
+               <children>
+                  <HBox prefHeight="60.0" prefWidth="393.0">
+                     <children>
+                        <Button fx:id="horsstock" mnemonicParsing="false" text="Hors stock" />
+                     </children>
+                  </HBox>
+               </children></HBox>
+            <Button fx:id="addcart" mnemonicParsing="false" onAction="#ajouterPanier" style="-fx-background-color: red;" text="Panier" />
+            <Pane prefHeight="5.0" prefWidth="382.0" />
+            <TextField fx:id="quantite" />
+            <TextField fx:id="idproduit" />
+            <TextField fx:id="txtimage" />
+            <TextField fx:id="txtcat" />
+            <TextField fx:id="txtcanomproduit" />
+            <TextField fx:id="txtdes" />
+            <TextField fx:id="prix" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
